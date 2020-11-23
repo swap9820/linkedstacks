@@ -7,3 +7,108 @@
 .navbar {
     border-radius: none;
 }
+.font-weight-bold {
+    font-weight: 700!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.mt-3, .my-3 {
+    margin-top: 1rem!important;
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+.p-3 {
+    padding: 1rem!important;
+}
+.mt-4, .my-4 {
+    margin-top: 1.5rem!important;
+}
+.bio-editicon{
+    right:30px;
+    top:15px;
+}
+
+.bio-text-muted-profile, .bio-text-muted-profile a {
+    color: #d6d6d6!important;
+}
+.bio-font-weight-bold {
+    font-weight: 700!important;
+}
+.bio-position-absolute {
+    position: absolute!important;
+}
+.bio-new-post-button {
+    text-align: center;
+    background-size: 200% auto;
+    border-radius: 8px;
+    transition: .5s;
+    font-family: "Montserrat",sans-serif;
+    color: #fff!important;
+    background-image: linear-gradient(270deg,#55bdf1 0,#2fadec 51%,#84fab0);
+    font-weight: 700;
+    border: none;
+}
+img, svg {
+    vertical-align: middle;
+}
+.bio-box-shadow {
+    padding: 10px 20px;
+    border-radius: .25rem;
+}
+.bio-profile-box {
+    background-color: #1f1f1f;
+    box-shadow: 0 13px 30px 6px #000;
+}
+.p-3 {
+    padding: 1rem!important;
+}
+.mt-3, .my-3 {
+    margin-top: 1rem!important;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.flex-column {
+    flex-direction: column!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.bio-divider {
+    width: 100%;
+    background-color: hsla(0,0%,70.2%,.6);
+}
+
+.bio-page-footer {
+    margin-top: auto;
+}
+.justify-content-between {
+    justify-content: space-between!important;
+}
+.pl-5, .px-5 {
+    padding-left: 3rem!important;
+}
+.pr-5, .px-5 {
+    padding-right: 3rem!important;
+}
+.pb-4, .py-4 {
+    padding-bottom: 1.5rem!important;
+}
+.pt-4, .py-4 {
+    padding-top: 1.5rem!important;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+.bio-main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
