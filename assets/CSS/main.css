@@ -20,6 +20,9 @@
 .mt-3, .my-3 {
     margin-top: 1rem!important;
 }
+.mt-5, .my-5 {
+    margin-top: 3rem!important;
+}
 label {
     display: inline-block;
     margin-bottom: .5rem;
@@ -30,9 +33,60 @@ label {
 .mt-4, .my-4 {
     margin-top: 1.5rem!important;
 }
+.p-3 {
+    padding: 1rem!important;
+}
+.mt-3, .my-3 {
+    margin-top: 1rem!important;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.flex-column {
+    flex-direction: column!important;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.justify-content-center {
+    justify-content: center!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.justify-content-between {
+    justify-content: space-between!important;
+}
+.pl-5, .px-5 {
+    padding-left: 3rem!important;
+}
+.pr-5, .px-5 {
+    padding-right: 3rem!important;
+}
+.pb-4, .py-4 {
+    padding-bottom: 1.5rem!important;
+}
+.pt-4, .py-4 {
+    padding-top: 1.5rem!important;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+/* BIO PAGE */
 .bio-editicon{
     right:30px;
     top:15px;
+}
+.bio-post{
+padding: 0 15%;
+}
+
+.bio-post-item{
+    border-radius: .45rem;
+    font-size: 1.1em;
+    padding: 2%;
+    background-color: #484d4df5;
 }
 
 .bio-text-muted-profile, .bio-text-muted-profile a {
@@ -66,21 +120,7 @@ img, svg {
     background-color: #1f1f1f;
     box-shadow: 0 13px 30px 6px #000;
 }
-.p-3 {
-    padding: 1rem!important;
-}
-.mt-3, .my-3 {
-    margin-top: 1rem!important;
-}
-.align-items-center {
-    align-items: center!important;
-}
-.flex-column {
-    flex-direction: column!important;
-}
-.d-flex {
-    display: flex!important;
-}
+
 .bio-divider {
     width: 100%;
     background-color: hsla(0,0%,70.2%,.6);
@@ -89,26 +129,54 @@ img, svg {
 .bio-page-footer {
     margin-top: auto;
 }
-.justify-content-between {
-    justify-content: space-between!important;
-}
-.pl-5, .px-5 {
-    padding-left: 3rem!important;
-}
-.pr-5, .px-5 {
-    padding-right: 3rem!important;
-}
-.pb-4, .py-4 {
-    padding-bottom: 1.5rem!important;
-}
-.pt-4, .py-4 {
-    padding-top: 1.5rem!important;
-}
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-    display: block;
-}
+
 .bio-main-container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    
+}
+
+/* EDIT BIO PAGE */
+.bio-container {
+    
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.form-control {
+    border: 1px solid #353535!important;
+    background-color: transparent!important;
+    color: #d3d3d3!important;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.sign-box, .signup-box {
+    width: 100%;
+    background-color: #1f1f1f;
+    box-shadow: 3px 13px 57px 6px #000;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 0 auto;
+}
+.sign-box {
+    position: relative;
+    z-index: 1;
 }
