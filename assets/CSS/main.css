@@ -4,24 +4,21 @@
 }
 
 .base{
-	background-color: #fdf986;
+	background-color: #feffc7;
 	padding-left: 100px;
 }
 .newPostSection{
 	/*background-color: red;*/
-	height: 1000px;
 }
 .otherSection{
 	/*background-color: blue;*/
-	height: 1000px;
 }
 .footer{
-	background-color: #fdf986;
+	background-color: #feffc7;
 	height:200px;
 }
 .postsColumn{
 	margin-left: 100px;
-	height: 700px;
 	width: 400px;
 }
 .post{
@@ -33,7 +30,7 @@ box-shadow:  5px 5px 0px #ded5d5,
              -5px -5px 0px #ffffff;
 }
 .emptySpace{
-	height: 150px;
+	height: 100px;
 }
 .leaderBoard{
 	height: 300px;
