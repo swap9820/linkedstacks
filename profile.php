@@ -1,3 +1,7 @@
+<? php
+session_start(); 
+?>
+
 <!DOCTYPE html>
 <html>
 <header>
@@ -19,6 +23,7 @@
         </button>
       
         <div class="collapse navbar-collapse" id="navbarColor01">
+<<<<<<< HEAD:profile.html
           
           <form class="form-inline my-2 my-lg-0 mr-auto ml-auto">
             <input class="form-control mr-sm-2" type="text" placeholder="Search Project">
@@ -30,6 +35,12 @@
             <li class="nav-item  ">
               <a class="nav-link" href="index.html">Home
                 
+=======
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">
+                  <span><?php echo $_SESSION['username']; ?></span>
+>>>>>>> a152962d5620375f345814d004a6b636a9a53ef8:profile.php
               </a>
             </li>
             
@@ -52,7 +63,7 @@
    <div class="container">
        <div class="row mt-lg-4">
            <div class="col-md-3">
-               <div class="container profile-bio p-3"">
+               <div class="container profile-bio p-3">
                    <div class="row">
                        <div class="col mr-auto ml-auto" style="margin: auto; max-width: 210px;">
                            <img src="images/avatar/boy-1.svg" style=" max-width: 200px;">
