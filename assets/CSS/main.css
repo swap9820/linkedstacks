@@ -1,9 +1,54 @@
-.richtexteditor{
-    height: 260px;
-    width: 1200px;
-    margin-left: 20px
+.base{
+	background-color: #fdf986;
 }
-
-.navbar {
-    border-radius: none;
+.newPostSection{
+	/*background-color: red;*/
+	height: 1000px;
+}
+.otherSection{
+	/*background-color: blue;*/
+	height: 1000px;
+}
+.footer{
+	background-color: #fdf986;
+	height:200px;
+}
+.postsColumn{
+	margin-left: 100px;
+	height: 700px;
+	width: 400px;
+}
+.post{
+	margin-top: 2rem;
+	height: 100px;
+	border-radius: 9px;
+background: #d7f05c;
+box-shadow:  5px 5px 0px #ded5d5, 
+             -5px -5px 0px #ffffff;
+}
+.leaderBoard{
+	height: 300px;
+	width: 250px;
+	border-radius: 9px;
+background-color: #21285e;
+}
+.newPost{
+	height: 70px;
+	width: 200px;
+	border-radius: 9px;
+background: #d7f05c;
+box-shadow:  5px 5px 0px #ded5d5, 
+             -5px -5px 0px #ffffff;
+}
+.clanList{
+	height: 400px;
+	width: 250px;
+	border-radius: 9px;
+background: #d7f05c;
+box-shadow:  5px 5px 0px #ded5d5, 
+             -5px -5px 0px #ffffff;
+}
+.socialMedia{
+	height:2rem;
+	width:2rem;
 }
