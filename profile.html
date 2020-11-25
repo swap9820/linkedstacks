@@ -1,7 +1,3 @@
-<? php
-session_start(); 
-?>
-
 <!DOCTYPE html>
 <html>
 <header>
@@ -38,6 +34,10 @@ session_start();
             <li class="nav-item ">
               <a class="nav-link" href="index.html">
                   <span><?php echo $_SESSION['username']; ?></span>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">
+                  Name
               </a>
             </li>
             
