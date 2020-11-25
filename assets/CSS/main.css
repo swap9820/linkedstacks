@@ -4,8 +4,7 @@
 }
 
 .base{
-	background-color: #feffc7;
-	padding-left: 100px;
+	background-color: #222;
 }
 .newPostSection{
 	/*background-color: red;*/
@@ -14,7 +13,7 @@
 	/*background-color: blue;*/
 }
 .footer{
-	background-color: #feffc7;
+	background-color: #222;
 	height:200px;
 }
 .postsColumn{
@@ -24,10 +23,9 @@
 .post{
 	margin-top: 2rem;
 	height: 100px;
-	border-radius: 9px;
-background: #d7f05c;
-box-shadow:  5px 5px 0px #ded5d5, 
-             -5px -5px 0px #ffffff;
+	border-radius: 5px;
+background: #1d3747de;
+color: white;
 }
 .emptySpace{
 	height: 100px;
@@ -35,24 +33,23 @@ box-shadow:  5px 5px 0px #ded5d5,
 .leaderBoard{
 	height: 300px;
 	width: 250px;
-	border-radius: 9px;
-background-color: #21285e;
+	border-radius: 5px;
+background-color: #1d3747de;
+}
+.leaders{
+	background-color: #192b3e;
 }
 .newPost{
 	height: 70px;
 	width: 200px;
-	border-radius: 9px;
-background: #d7f05c;
-box-shadow:  5px 5px 0px #ded5d5, 
-             -5px -5px 0px #ffffff;
+	border-radius: 5px;
+background: #192b3e;
 }
 .clanList{
 	height: 400px;
 	width: 250px;
-	border-radius: 9px;
-background: #d7f05c;
-box-shadow:  5px 5px 0px #ded5d5, 
-             -5px -5px 0px #ffffff;
+	border-radius: 5px;
+background: #1d3747de;
 }
 .socialMedia{
 	height:2rem;
@@ -62,86 +59,6 @@ box-shadow:  5px 5px 0px #ded5d5,
     height: 260px;
     width: 1200px;
     margin-left: 20px
-}
-.html {
-  --bgcolor: #222;
-  --primarycolor: #1d3747de;
-}
-
-.base {
-  background-color: #fdf986;
-  padding-left: 100px;
-}
-
-.newPostSection {
-  /*background-color: red;*/
-  height: 1000px;
-}
-
-.otherSection {
-  /*background-color: blue;*/
-  height: 1000px;
-}
-
-.footer {
-  background-color: #fdf986;
-  height: 200px;
-}
-
-.postsColumn {
-  margin-left: 100px;
-  height: 700px;
-  width: 400px;
-}
-
-.post {
-  margin-top: 2rem;
-  height: 100px;
-  border-radius: 9px;
-  background: #d7f05c;
-  box-shadow: 5px 5px 0px #ded5d5,
-    -5px -5px 0px #ffffff;
-}
-
-.emptySpace {
-  height: 150px;
-}
-
-.leaderBoard {
-  height: 300px;
-  width: 250px;
-  border-radius: 9px;
-  background-color: #21285e;
-}
-
-.newPost {
-  height: 70px;
-  width: 200px;
-  border-radius: 9px;
-  background: #d7f05c;
-  box-shadow: 5px 5px 0px #ded5d5,
-    -5px -5px 0px #ffffff;
-}
-
-.clanList {
-  height: 400px;
-  width: 250px;
-  border-radius: 9px;
-  background: #d7f05c;
-  box-shadow: 5px 5px 0px #ded5d5,
-    -5px -5px 0px #ffffff;
-}
-
-.socialMedia {
-  height: 2rem;
-  width: 2rem;
-}
-
-.richtexteditor {
-  height: 260px;
-  width: 1200px;
-  margin-left: 20px
->>>>>>> 9421acac57dac393a5a9a04865429e5cc364df05
 }
 
 .navbar {
