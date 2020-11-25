@@ -29,7 +29,7 @@ if($num==1)
 }
 else
 {
-    echo "Failed";
+    echo "Wrong Username or Password";
    // header('location:login.php');
 }
  
