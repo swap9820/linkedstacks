@@ -34,7 +34,7 @@
                 background-color: #1d3747de;
                 padding: 15px!important;
                 margin: auto auto;
-                width: 80%;
+                width: 60%;
               }
           .postedby-box {
                           border-bottom: 1px dashed #4d4d56;
@@ -56,10 +56,43 @@
                             font-size: 30px;
                             font-family: "Frank Ruhl Libre",serif;
                             color: #fff;
+                            padding: 10px;
                           }
           .text-muted {
                         color: #6c757d!important;
                       }
+          
+          .post-comment {
+                          width: 100%;
+                          margin: 8px 0;
+                          border: none;
+                          border-bottom: 1px solid grey;
+                          text-decoration: none;
+                          background-color: transparent;
+                          color: #fff;
+                        }
+          .post-comment-btn {
+                              color: #fff;
+                              text-align: center;
+                              background-size: 200% auto;
+                              font-weight: 700;
+                              border-radius: 5px;
+                              transition: .5s;
+                              padding: 6px;
+                              background-image: linear-gradient(270deg,#ff5f87 0,#ff4242 55%,#ff53a9);
+                              border: none;
+                            }
+          .draft-post-btn {
+                            border: 1px solid #3b3b3b;
+                            color: #cfcfcf;
+                            background-color: transparent;
+                            padding: 0 12px;
+                            font-weight: 700;
+                            border-radius: 5px;
+                          }
+          .ml-3, .mx-3 {
+                        margin-left: 1rem!important;
+                        }
 
         </style>
     </head>
@@ -93,21 +126,24 @@
 		      <div class="Toastify"></div>
 	      </div>
         <br>
+        <div>
+        <label class="signin-heading text-muted">Comments</label>
+        </div>
         <form>
         <div class="ml-md-3">
           <div class="profile-items">
             <div class="d-flex">
               <div class="profile-icon">
-                <img src="images/avatar/boy-1.svg" style="width: 36px; height: 36px; border-radius: 18px;">
+                <img src="images/avatar/boy-1.svg" style="width: 26px; height: 26px; border-radius: 12px; ">
               </div>
               <fieldset class="com-box ml-3">
                 <input name="commentundefined" class="post-comment" type="text" placeholder="Type your reply here." value="">
               </fieldset>
             </div>
             <div class="d-flex ml-2 mt-1 float-right">
-              <button class="post-comment-btn px-4" action="submit" style="color: black;">Post</button>
+              <button class="post-comment-btn px-4" action="submit">Post</button>
               <div class="Toastify"></div>
-              <button class="draft-post-btn  ml-3 " action="cancel" style="color: black;">Cancel</button>
+              <button class="draft-post-btn  ml-3 " action="cancel">Cancel</button>
             </div>
           </div>
         </div>
