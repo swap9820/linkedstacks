@@ -32,15 +32,15 @@
           }
           .box {
                 background-color: #1d3747de;
-                padding: 15px!important;
+                padding: 30px!important;
                 margin: auto auto;
-                width: 60%;
+                width: 65%;
               }
           .postedby-box {
                           border-bottom: 1px dashed #4d4d56;
                           border-top: 1px dashed #4d4d56;
                           padding: 2px;
-                          bottom-margin: 1px;
+                          margin-bottom: 1px;
                         }
           .fa {
                 font-size: 20px;
@@ -63,11 +63,12 @@
                       }
           
           .post-comment {
-                          width: 700px;
+                          width: 35em;
                           margin: 8px 0;
+                          margin-bottom: 14px;
                           border: none;
                           outline: none;
-                          border-bottom: 1px solid grey;
+                          border-bottom: 1px solid #ff5f87;
                           text-decoration: none;
                           background-color: transparent;
                           color: #fff;
@@ -75,8 +76,9 @@
           .post-comment-btn {
                               color: #fff;
                               text-align: center;
+                              
                               background-size: 200% auto;
-                              font-weight: 700;
+                              font-weight: 600;
                               border-radius: 5px;
                               transition: .5s;
                               padding: 6px;
@@ -85,12 +87,14 @@
                               margin-right: 10px;
                             }
           .draft-post-btn {
-                            border: 1px solid #3b3b3b;
+                            border: 1px solid #ff5f87;
                             color: #cfcfcf;
+                            
+
                             background-color: transparent;
-                            font-weight: 700;
+                            font-weight: 600;
                             border-radius: 5px;
-                            margin-right: 150px;
+                            margin-right: 10px;
                           }
           .ml-3, .mx-3 {
                         margin-left: 1rem!important;
@@ -98,7 +102,7 @@
 
         </style>
     </head>
-    <body style="background-color: #222;">
+    <body style="background-color: #222;font-family: OpenSans-Regular;font-size: 19px;">
         
 
           <br>
@@ -106,20 +110,22 @@
 
         <div id="root" style="background-color: #222;">
           <div class="main-container" style="color: white;">
-            <div class="class="mt-3 post-display style="font-size: 18px;">
+            <div class="class="mt-3 post-display style="font-size: 19px;">
               <div class="box">
                 <label class="signin-heading" style="font-size: 40px; color: white;">Freelancer</label>
                 <div class="postedby-box" >
                 <span class="text-muted"> Posted by </span>
                 </div>
+                <div style="line-height: 1.9em; font-size: 19px;margin-top: 1.8em;">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              </div>
                 <br><br>
-                <h5 style="color: white;">Tags:  <div class="d-flex mt-3">
+                <div class="d-flex mt-3"><h4 style="color: white;margin-right:1em;">Tags: </h4>
 	              <a class="text-decoration-none">
-                  <button type="button" class="btn btn-dark post-tag-button align-self-center">Web Development</button>
+                  <button type="button" class="btn btn-dark post-tag-button align-self-center" style="font-size: 0.8em;">Web Development</button>
                 </a>
-              </div></h5>
-              <br>
+              </div>
+              
                 <i onclick="myFunction(this)" class="fa fa-thumbs-up"> Like </i>
                 <script>
                 function myFunction(x) {x.classList.toggle("fa-thumbs-down");}
@@ -127,12 +133,12 @@
                 <div>
 		      <div class="Toastify"></div>
 	      </div>
-        <br>
+        
         <div>
         <label class="signin-heading text-muted">Comments</label>
         </div>
         <form>
-        <div class="ml-md-3 box">
+        <div class="ml-md-3">
           <div class="profile-items">
             <div class="d-flex">
               <div class="profile-icon">
@@ -142,11 +148,11 @@
                 <input name="commentundefined" class="post-comment" type="text" placeholder="Type your reply here." value="">
               </fieldset>
             </div>
-            <div class="row box">
-              <div class="d-flex ml-2 mt-1 float-right ">
+            <div class="row">
+              <div class="d-flex ml-auto mt-1 ">
                 <button class="post-comment-btn px-4" action="submit">Post</button>
                 <div class="Toastify"></div>
-                <button class="draft-post-btn  ml-3 " action="cancel">Cancel</button>
+                <button class="draft-post-btn ml-3 p-3" action="cancel">Cancel</button>
               </div>
           </div>
         </div>
