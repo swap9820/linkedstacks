@@ -1,7 +1,3 @@
-<? php
-session_start(); 
-?>
-
 <!DOCTYPE html>
 <html>
 <header>
@@ -23,24 +19,10 @@ session_start();
         </button>
       
         <div class="collapse navbar-collapse" id="navbarColor01">
-<<<<<<< HEAD:profile.html
-          
-          <form class="form-inline my-2 my-lg-0 mr-auto ml-auto">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search Project">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-          </form>
-
-          <ul class="navbar-nav ml-auto align-self-center">
-            
-            <li class="nav-item  ">
-              <a class="nav-link" href="index.html">Home
-                
-=======
           <ul class="navbar-nav mr-auto">
             <li class="nav-item ">
               <a class="nav-link" href="index.html">
-                  <span><?php echo $_SESSION['username']; ?></span>
->>>>>>> a152962d5620375f345814d004a6b636a9a53ef8:profile.php
+                  Name
               </a>
             </li>
             
