@@ -636,9 +636,23 @@ margin-top: 20%;
   background-color: #222;
 }
 
+.profile-project-list{
+height: 60%;
+overflow-y: auto;
+
+}
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .profile-project-list-item{
   margin: 5% 0;
-  padding: 2%;
+  padding: 1.2em;
   color: white;
   vertical-align: middle;
 border-radius: 0.25rem;
