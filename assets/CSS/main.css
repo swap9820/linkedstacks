@@ -1,3 +1,7 @@
+.html{
+  --bgcolor:#222;
+  --primarycolor:#375a7f;
+}
 .base{
 	background-color: #fdf986;
 	padding-left: 100px;
@@ -65,71 +69,7 @@ box-shadow:  5px 5px 0px #ded5d5,
 .navbar {
     border-radius: none;
 }
-.font-weight-bold {
-    font-weight: 700!important;
-}
-.text-center {
-    text-align: center!important;
-}
-.col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.mt-3, .my-3 {
-    margin-top: 1rem!important;
-}
-.mt-5, .my-5 {
-    margin-top: 3rem!important;
-}
-label {
-    display: inline-block;
-    margin-bottom: .5rem;
-}
-.p-3 {
-    padding: 1rem!important;
-}
-.mt-4, .my-4 {
-    margin-top: 1.5rem!important;
-}
-.p-3 {
-    padding: 1rem!important;
-}
-.mt-3, .my-3 {
-    margin-top: 1rem!important;
-}
-.align-items-center {
-    align-items: center!important;
-}
-.flex-column {
-    flex-direction: column!important;
-}
-.align-items-center {
-    align-items: center!important;
-}
-.justify-content-center {
-    justify-content: center!important;
-}
-.d-flex {
-    display: flex!important;
-}
-.justify-content-between {
-    justify-content: space-between!important;
-}
-.pl-5, .px-5 {
-    padding-left: 3rem!important;
-}
-.pr-5, .px-5 {
-    padding-right: 3rem!important;
-}
-.pb-4, .py-4 {
-    padding-bottom: 1.5rem!important;
-}
-.pt-4, .py-4 {
-    padding-top: 1.5rem!important;
-}
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-    display: block;
-}
+
 
 /* BIO PAGE */
 .bio-editicon{
@@ -664,4 +604,25 @@ img, svg {
   
   
   
->>>>>>> 8c1f69b6a0d5ab96cf09b935635dda88b31af34a
+/* Edit Bio Page */
+
+
+.editBio-form-container{
+  border-radius: 15px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  margin: 10% auto;
+  width: 40%;
+  align-items: center;
+  padding:2%;
+}
+
+.btn-success{
+  width:50%;
+}
+
+/* Profile Page */
+.profile-bio{
+  border-radius: 0.25rem;
+
+}
