@@ -24,12 +24,13 @@ $num = mysqli_num_rows($result);
 
 if($num==1)
 {
-    $_SESSION['USERNAME'] = $username;
-    header('location:profile.php');
+    $_SESSION['username'] = $username;
+    header('location:index.php');
 }
 else
 {
-    header('location:login.php');
+    echo "Wrong Username or Password";
+   // header('location:login.php');
 }
  
 

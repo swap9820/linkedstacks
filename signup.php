@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-header('location:login.php');
+
 
 $con = mysqli_connect('127.0.0.1:3307', 'root' , '');
 if($con)
@@ -31,6 +31,7 @@ else
 {
     $qy = " INSERT INTO `credentials`(`username` , `password`) VALUES ('$username' , '$pass' )";
     mysqli_query($con ,$qy); 
+    //header('location:login.php');
      
 }
  

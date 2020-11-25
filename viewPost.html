@@ -21,30 +21,81 @@
         <link rel="stylesheet" href="assets/CSS/dummy.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
+        *, :after, :before {
+    box-sizing: border-box;
+}
+.main-container>.container {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,sans-serif!important;
+}
           .bg{
             background-color: #222;
           }
           .box {
-                background-color: #272b33;
+                background-color: #1d3747de;
                 padding: 15px!important;
                 margin: auto auto;
-                width: 80%;
+                width: 60%;
               }
           .postedby-box {
                           border-bottom: 1px dashed #4d4d56;
                           border-top: 1px dashed #4d4d56;
-                          padding: 0.3%;
-                          top-margin: 1px;
+                          padding: 2px;
+                          bottom-margin: 1px;
                         }
-.fa {
-  font-size: 20px;
-  cursor: pointer;
-  user-select: none;
-}
+          .fa {
+                font-size: 20px;
+                cursor: pointer;
+                user-select: none;
+                padding: 20px;
+              }
 
-.fa:hover {
-  color: darkblue;
-}
+          .fa:hover {
+                      color: darkblue;
+                    }
+          .signin-heading {
+                            font-size: 30px;
+                            font-family: "Frank Ruhl Libre",serif;
+                            color: #fff;
+                            padding: 10px;
+                          }
+          .text-muted {
+                        color: #6c757d!important;
+                      }
+          
+          .post-comment {
+                          width: 700px;
+                          margin: 8px 0;
+                          border: none;
+                          outline: none;
+                          border-bottom: 1px solid grey;
+                          text-decoration: none;
+                          background-color: transparent;
+                          color: #fff;
+                        }
+          .post-comment-btn {
+                              color: #fff;
+                              text-align: center;
+                              background-size: 200% auto;
+                              font-weight: 700;
+                              border-radius: 5px;
+                              transition: .5s;
+                              padding: 6px;
+                              background-image: linear-gradient(270deg,#ff5f87 0,#ff4242 55%,#ff53a9);
+                              border: none;
+                              margin-right: 10px;
+                            }
+          .draft-post-btn {
+                            border: 1px solid #3b3b3b;
+                            color: #cfcfcf;
+                            background-color: transparent;
+                            font-weight: 700;
+                            border-radius: 5px;
+                            margin-right: 150px;
+                          }
+          .ml-3, .mx-3 {
+                        margin-left: 1rem!important;
+                        }
+
         </style>
     </head>
     <body style="background-color: #222;">
@@ -58,9 +109,17 @@
             <div class="class="mt-3 post-display style="font-size: 18px;">
               <div class="box">
                 <label class="signin-heading" style="font-size: 40px; color: white;">Freelancer</label>
-                <div class="postedby-box" >Posted By</div>
+                <div class="postedby-box" >
+                <span class="text-muted"> Posted by </span>
+                </div>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 <br><br>
+                <h5 style="color: white;">Tags:  <div class="d-flex mt-3">
+	              <a class="text-decoration-none">
+                  <button type="button" class="btn btn-dark post-tag-button align-self-center">Web Development</button>
+                </a>
+              </div></h5>
+              <br>
                 <i onclick="myFunction(this)" class="fa fa-thumbs-up"> Like </i>
                 <script>
                 function myFunction(x) {x.classList.toggle("fa-thumbs-down");}
@@ -68,17 +127,35 @@
                 <div>
 		      <div class="Toastify"></div>
 	      </div>
-        <div class="d-flex mt-3">
-	        <a class="text-decoration-none">
-		      <button type="button" class="btn btn-dark post-tag-button align-self-center">Web Development</button>
-	        </a>
+        <br>
+        <div>
+        <label class="signin-heading text-muted">Comments</label>
         </div>
-
+        <form>
+        <div class="ml-md-3 box">
+          <div class="profile-items">
+            <div class="d-flex">
+              <div class="profile-icon">
+                <img src="images/avatar/boy-1.svg" style="width: 26px; height: 26px; border-radius: 12px; ">
               </div>
+              <fieldset class="com-box ml-3 flex-grow-1">
+                <input name="commentundefined" class="post-comment" type="text" placeholder="Type your reply here." value="">
+              </fieldset>
             </div>
+            <div class="row box">
+              <div class="d-flex ml-2 mt-1 float-right ">
+                <button class="post-comment-btn px-4" action="submit">Post</button>
+                <div class="Toastify"></div>
+                <button class="draft-post-btn  ml-3 " action="cancel">Cancel</button>
+              </div>
           </div>
         </div>
-        
+        </div>
+        </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </body>
+  </body>
 </html>
