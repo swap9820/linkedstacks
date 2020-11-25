@@ -5,6 +5,7 @@
 
 .base{
 	background-color: #fdf986;
+	padding-left: 100px;
 }
 .newPostSection{
 	/*background-color: red;*/
@@ -30,6 +31,9 @@
 background: #d7f05c;
 box-shadow:  5px 5px 0px #ded5d5, 
              -5px -5px 0px #ffffff;
+}
+.emptySpace{
+	height: 150px;
 }
 .leaderBoard{
 	height: 300px;
