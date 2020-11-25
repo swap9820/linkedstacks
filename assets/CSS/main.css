@@ -2,6 +2,7 @@
   --bgcolor:#222;
   --primarycolor:#375a7f;
 }
+
 .base{
 	background-color: #fdf986;
 }
@@ -64,6 +65,7 @@ box-shadow:  5px 5px 0px #ded5d5,
 
 .navbar {
     border-radius: none;
+    background-color:#1d3747de;
 }
 
 
@@ -620,5 +622,31 @@ img, svg {
 /* Profile Page */
 .profile-bio{
   border-radius: 0.25rem;
+background-color: #1d3747de;
+color: white;
+margin-top: 20%;
+}
 
+.profile-bg{
+  color: white;
+  background-color: #222;
+}
+
+.profile-project-list-item{
+  margin: 5% 0;
+  padding: 2%;
+  color: white;
+  vertical-align: middle;
+border-radius: 0.25rem;
+background-color: #1d3747de;
+}
+.btn-outline-primary{ 
+  color:white;
+  font-size: 80%;
+  border-radius: 0.5rem;
+  border-color: white;
+}
+
+.profile-project-list-item-details{
+  margin-right: 5%;
 }
