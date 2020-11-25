@@ -1,3 +1,7 @@
+<? php
+session_start(); 
+?>
+
 <!DOCTYPE html>
 <html>
 <header>
@@ -21,8 +25,8 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Home
-                
+              <a class="nav-link" href="index.html">
+                  <span><?php echo $_SESSION['username']; ?></span>
               </a>
             </li>
             <li class="nav-item active">
@@ -47,7 +51,7 @@
    <div class="container">
        <div class="row mt-lg-4">
            <div class="col-md-3">
-               <div class="container profile-bio p-3"">
+               <div class="container profile-bio p-3">
                    <div class="row">
                        <div class="col" style="width: 70%;margin: auto auto;">
                            <img src="images/avatar/boy-1.svg" >
