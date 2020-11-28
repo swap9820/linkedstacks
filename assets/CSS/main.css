@@ -649,6 +649,7 @@ input.input100 {
 .bio-submit-btn {
   float: right;
   height: 35px;
+  color:white;
   font-size: 0.8em;
   background-color: transparent;
   padding: 6px 12px;
@@ -657,10 +658,11 @@ input.input100 {
 }
 
 .editBio-form-container {
+  background-color: rgb(44, 44, 44);
   border-radius: 15px;
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 1.4em;
-  margin: 10% auto;
+  margin: 7% auto;
   width: 40%;
   align-items: center;
   padding: 2%;
