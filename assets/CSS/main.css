@@ -686,13 +686,23 @@ input.input100 {
 
 .profile-bg {
   color: white;
-  background-color: #222;
+  background-color: rgb(32, 37, 39);
 }
 
 .profile-project-list {
   height: 60%;
   overflow-y: auto;
 
+}
+
+.btn-primary{
+  background-image: linear-gradient(rgb(31, 125, 153),rgb(18, 96, 119));
+  outline: none;
+  border: none;
+  
+ width: 100%;
+ 
+ margin-top: 20px;
 }
 
 .example::-webkit-scrollbar {
