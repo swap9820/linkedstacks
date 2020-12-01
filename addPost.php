@@ -26,7 +26,7 @@
                 <a class="navbar-brand" href="#">LinkedStacks</a>
               </div>
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="index.php">Home</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -38,6 +38,13 @@
 
           <br>
 
+        <form action="addnewpost.php" method="POST">
+
+          <div class="form-group align-content-center">
+            <label class="col-form-label" for="postTitle">Post Title</label>
+            <input type="text" class="form-control" placeholder="Enter Post Title" id="postTitle" name="postTitle">
+          </div>
+        </div>
 
         <div class="richtexteditor">
             <textarea name="editor1"  ></textarea>
@@ -45,7 +52,17 @@
                 CKEDITOR.replace( 'editor1' );
             </script>
         </div>
+        <br><br><Br>
+        <div class="form-group align-content-center">
+          <label class="col-form-label" for="postTitle">Tags</label>
+          <input type="text" class="form-control" placeholder="Enter Tags" id="tags" name="tags">
+        </div>
+      </div>
 
-        
+      <div class="col-md-6 ">
+               <input type="submit" class="bio-submit-btn" value="submit">
+            </div>
+
+      </form>
     </body>
 </html>
