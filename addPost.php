@@ -55,7 +55,12 @@
         <br><br><Br>
         <div class="form-group align-content-center">
           <label class="col-form-label" for="postTitle">Tags</label>
-          <input type="text" class="form-control" placeholder="Enter Tags" id="tags" name="tags">
+          <select class="form-control" id="tags" name="tags">
+                      <option value="Web Development">Web Development</option>
+                      <option value="IOT">IOT</option>
+                      <option value="Android">Android</option>
+                      <option value="Machine Learning">Machine Learning</option>                 
+                    </select>
         </div>
       </div>
 
