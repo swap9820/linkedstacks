@@ -43,7 +43,7 @@
                 </a>
               <li class="nav-item  ">
                 <a class="nav-link" href="#">Logout
-                  
+                   
                 </a>
               </li>
         
@@ -86,10 +86,10 @@
                 <div class="form-group">
                     <label for="department">Department</label>
                     <select class="form-control" id="department" name="department">
-                      <option value="CO">Computer</option>
+                      <option value="COMP">Computer</option>
                       <option value="IT">IT</option>
-                      <option value="CI">Civil</option>
-                      <option value="EC">Electronics</option>                 
+                      <option value="CIVIL">Civil</option>
+                      <option value="ELECTRONICS">Electronics</option>                 
                     </select>
                   </div>
                </div>
