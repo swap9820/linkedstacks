@@ -21,7 +21,7 @@ $q = "SELECT * FROM credentials where username='$username' ";
 
 $result = mysqli_query($con, $q);
 $num = mysqli_num_rows($result);
-
+    
 if($num==1)
 {
     echo "Duplicate Data";
