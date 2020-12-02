@@ -23,6 +23,18 @@
         <link rel="stylesheet" href="assets/CSS/main.css">
 </head>
 <body style="color: white;">
+<?php
+require_once("config.php");
+// FETCH POSTS
+$sql="SELECT * from project ORDER BY `Timestamp`";
+
+$postInfo=mysqli_query($con,$sql);
+if(!mysqli_num_rows($postInfo)>0)
+{
+    echo "post fetch unsucessfull";
+}
+
+?>
 	<div class="base profile-bg" style="font-family: OpenSans-Regular;">
 		<nav class="navbar navbar-expand-lg navbar-dark nav">
         <a class="navbar-brand " href="index.html">LinkedStacks</a>
@@ -65,59 +77,35 @@
 		<div class="newPostSection col-md-7 mt-4">
 			<h3 class="ml-5">What's New-</h3>
 			<div class="postsColumn">
-				<div class="p-3 post">
-					<div class="row">
-                        <div class="col-md-2 ml-2 mr-2 align-content-center"> <div style="margin-top:20px">5 Likes</div></div>
+      <?php 
+                   while ($row = mysqli_fetch_assoc($postInfo)){
+                       echo
+                '<div class="p-3 post">
+                    <div class ="row">
+                        <div class="col-md-2 align-content-center"> <div style="margin-top:20px">'.$row["Likes"].' Likes</div></div>
                         <div class="col">
                             <div class="row">
-                                <h5>Project Title</h5>
+                                <h5>'.$row["Project Name"].'</h5>
                             </div>
                             <div class="row d-flex align-items-center mt-lg-2">
                                 <img src="images/avatar/boy-1.svg" height="20px" style="padding-right: 2%;">
-                                 <div class="profile-project-list-item-details">Name</div>
+                                 <div class="profile-project-list-item-details">'.$row["username"].'</div>
+                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">'.$row["Project Tags"].'</button>
+                                 
 
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag1</button>
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag2</button>                         
+
+                            
                             </div>
                         </div>
                     </div>
-				</div>
-				<div class="p-3 post">
-					<div class="row">
-                        <div class="col-md-2 ml-2 mr-2 align-content-center"> <div style="margin-top:20px">5 Likes</div></div>
-                        <div class="col">
-                            <div class="row">
-                                <h5>Project Title</h5>
-                            </div>
-                            <div class="row d-flex align-items-center mt-lg-2">
-                                <img src="images/avatar/boy-1.svg" height="20px" style="padding-right: 2%;">
-                                 <div class="profile-project-list-item-details">Name</div>
+                </div>';
+                }
+                ?>
+        
 
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag1</button>
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag2</button>                         
-                            </div>
-                        </div>
-                    </div>
-				</div>
-				<div class="p-3 post">
-					<div class="row">
-                        <div class="col-md-2 ml-2 mr-2 align-content-center"> <div style="margin-top:20px">5 Likes</div></div>
-                        <div class="col">
-                            <div class="row">
-                                <h5>Project Title</h5>
-                            </div>
-                            <div class="row d-flex align-items-center mt-lg-2">
-                                <img src="images/avatar/boy-1.svg" height="20px" style="padding-right: 2%;">
-                                 <div class="profile-project-list-item-details">Name</div>
 
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag1</button>
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag2</button>                         
-                            </div>
-                        </div>
-                    </div>
-				</div>
 			</div>
-			<p class="ml-5" id="more">more</p>
+			<!-- <p class="ml-5" id="more">more</p> -->
 		</div>
 		<div class="otherSection ml-sm-5 d-flex flex-column justify-content-star col-md-5 col-lg-4 mt-4">
 			<div class="p-3 leaderBoard">

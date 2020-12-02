@@ -1,23 +1,13 @@
 <?php
 
-session_start();
-
-$con = mysqli_connect('127.0.0.1:3307', 'root' , '');
-if($con)
-{
-    echo "Connection Sucessful";
-}
-else 
-{
-    echo "Connection Failed";
-}
-
-mysqli_select_db($con ,'linkedstacks');
+require_once("config.php");
+$user=$_SESSION[`User ID`];
 $title = $_POST['postTitle'];
 $content = $_POST['editor1'];
 $tags = $_POST['tags'];
 
-    $qy = " INSERT INTO `project`(`Project Name` `Project Info` `Project Tags`) VALUES ( '$title' '$content' '$tags')";
+
+    $qy = " INSERT INTO `project`(`Project Name`, `Project Info`, `Project Tags`,`User ID`) VALUES ( '$title' '$content' '$tags' '$user')";
     $sql = mysqli_query($con ,$qy);
     if ($sql)
       {
@@ -28,6 +18,6 @@ $tags = $_POST['tags'];
       }
      
     echo "Done!";
-    //header("Location:index.php");
+    header("Location:profile.php");
 
 ?>

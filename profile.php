@@ -28,7 +28,7 @@ require_once("config.php");
     else{
         echo "bio fetch unsucessfull";
     }
-
+// TODO: Add join methods
     // FETCH POSTS
     $sql="SELECT * from project where `User ID` = '$user'";
 
@@ -132,7 +132,7 @@ require_once("config.php");
                             <div class="row d-flex align-items-center mt-lg-2">
                                 <img src="images/avatar/boy-1.svg" height="20px" style="padding-right: 2%;">
                                  <div class="profile-project-list-item-details">'.$row["username"].'</div>
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">'.$row["Project Tags"].'</button>
+                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details"><a href="'.$row["Project Tags"].'.php">'.$row["Project Tags"].'</button>
                                  
 
 
@@ -143,6 +143,7 @@ require_once("config.php");
                 </div>';
                 }
                 ?>
+                <button type="button" class="btn btn-outline-primary profile-project-list-item-details" ><a href="index.php">hello</a></button>
                 
                 
             </div>

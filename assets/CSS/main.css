@@ -228,7 +228,7 @@ a {
   font-family: OpenSans-Regular;
   font-size: 14px;
   line-height: 1.7;
-  color: #666666;
+  color: white;
   margin: 0px;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
@@ -732,6 +732,9 @@ input.input100 {
   border-radius: 0.5rem;
   border-color: white;
 }
+.btn   a{
+  color:white !important;
+} 
 
 .profile-project-list-item-details {
   margin-right: 5%;
