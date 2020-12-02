@@ -1,6 +1,4 @@
-<? php
-session_start(); 
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +43,7 @@ session_start();
               <a class="nav-link" href="index.html">Home</a>
             
             <li class="nav-item active ">
-                <a class="nav-link" href="profile.html">My Profile
+                <a class="nav-link" href="profile.php">My Profile
                   
                 </a>
               </li>

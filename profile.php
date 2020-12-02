@@ -30,17 +30,13 @@ require_once("config.php");
     }
 
     // FETCH POSTS
-    // $sql="SELECT * from project where `User ID` = '$user'";
+    $sql="SELECT * from project where `User ID` = '$user'";
 
-    // $result=mysqli_query($con,$sql);
-    // if(mysqli_num_rows($result)>0)
-    // {
-            
-    //             $record=mysqli_fetch_array($result);        
-    // }
-    // else{
-    //     echo "bio fetch unsucessfull";
-    // }
+    $postInfo=mysqli_query($con,$sql);
+    if(!mysqli_num_rows($postInfo)>0)
+    {
+        echo "post fetch unsucessfull";
+    }
 
 ?>
     
@@ -64,12 +60,12 @@ require_once("config.php");
               <a class="nav-link" href="index.html">Home</a>
             
             <li class="nav-item active ">
-                <a class="nav-link" href="profile.html">My Profile
+                <a class="nav-link" href="profile.php">My Profile
                   
                 </a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="editBio.html">Edit Profile
+                <a class="nav-link" href="editBio.php">Edit Profile
                   
                 </a>
               <li class="nav-item  ">
@@ -116,93 +112,39 @@ require_once("config.php");
                    </div>
                </div>
                <div >
-                <a href="addPost.html"><button type="button" class="btn btn-primary btn-lg">New Post</button></a>
+                <a href="addPost.php"><button type="button" class="btn btn-primary btn-lg">New Post</button></a>
                </div>
            </div>
            <div class="col-md-8 ">
                <div style="text-align: center;">
                <h1>Posts</h1></div>
                <div class="container profile-project-list example" >
-                <div class="container profile-project-list-item">
+                   <?php 
+                   while ($row = mysqli_fetch_assoc($postInfo)){
+                       echo
+                '<div class="container profile-project-list-item">
                     <div class ="row">
-                        <div class="col-md-2 align-content-center"> <div style="margin-top:20px">5 Likes</div></div>
+                        <div class="col-md-2 align-content-center"> <div style="margin-top:20px">'.$row["Likes"].' Likes</div></div>
                         <div class="col">
                             <div class="row">
-                                <h5>Project Title</h5>
+                                <h5>'.$row["Project Name"].'</h5>
                             </div>
                             <div class="row d-flex align-items-center mt-lg-2">
                                 <img src="images/avatar/boy-1.svg" height="20px" style="padding-right: 2%;">
-                                 <div class="profile-project-list-item-details">Name</div>
-
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag1</button>
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag2</button>
+                                 <div class="profile-project-list-item-details">'.$row["username"].'</div>
+                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">'.$row["Project Tags"].'</button>
+                                 
 
 
                             
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="container profile-project-list-item">
-                    <div class ="row">
-                        <div class="col-md-2" style="height: 100%;margin-top: 20px;"> 5 Likes</div>
-                        <div class="col">
-                            <div class="row">
-                                <h5>Project Title</h5>
-                            </div>
-                            <div class="row d-flex align-items-center mt-lg-2">
-                                <img src="images/avatar/boy-1.svg" height="20px" style="padding-right: 2%;">
-                                 <div class="profile-project-list-item-details">Name</div>
-
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag1</button>
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag2</button>
-
-
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container profile-project-list-item">
-                    <div class ="row">
-                        <div class="col-md-2" style="height: 100%;margin-top: 20px;"> 5 Likes</div>
-                        <div class="col">
-                            <div class="row">
-                                <h5>Project Title</h5>
-                            </div>
-                            <div class="row d-flex align-items-center mt-lg-2">
-                                <img src="images/avatar/boy-1.svg" height="20px" style="padding-right: 2%;">
-                                 <div class="profile-project-list-item-details">Name</div>
-
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag1</button>
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag2</button>
-
-
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container profile-project-list-item">
-                    <div class ="row">
-                        <div class="col-md-2" style="height: 100%;margin-top: 20px;"> 5 Likes</div>
-                        <div class="col">
-                            <div class="row">
-                                <h5>Project Title</h5>
-                            </div>
-                            <div class="row d-flex align-items-center mt-lg-2">
-                                <img src="images/avatar/boy-1.svg" height="20px" style="padding-right: 2%;">
-                                 <div class="profile-project-list-item-details">Name</div>
-
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag1</button>
-                                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details">Tag2</button>
-
-
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div>';
+                }
+                ?>
+                
+                
             </div>
            </div>
        </div>
