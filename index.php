@@ -22,7 +22,7 @@
         <!-- Main CSS-->
         <link rel="stylesheet" href="assets/CSS/main.css">
 </head>
-<body style="color: black; overflow-x:hidden">
+<body style="color: white; overflow-x:hidden">
 
 
 <?php
@@ -54,10 +54,10 @@ if(!mysqli_num_rows($postInfo)>0)
 
           <ul class="navbar-nav ml-auto align-self-center" >
             
-            <li class="nav-item  "style="padding-right:10px;">
+            <li class="nav-item active "style="padding-right:10px;">
               <a class="nav-link" href="index.php">Home</a>
             
-            <li class="nav-item active "style="padding-right:10px;">
+            <li class="nav-item  "style="padding-right:10px;">
                 <a class="nav-link" href="profile.php">My Profile
                   
                 </a>
@@ -108,7 +108,7 @@ if(!mysqli_num_rows($postInfo)>0)
 
 
 			</div>
-			<!-- <p class="ml-5" id="more">more</p> -->
+			<p class="ml-5" id="more" style="font-size: 20px; color:white">more</p>
 		</div>
 		<div class="otherSection ml-sm-5 d-flex flex-column justify-content-star col-md-5 col-lg-4 mt-4">
 			<div class="p-3  leaderBoard">

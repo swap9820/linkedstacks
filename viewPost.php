@@ -150,15 +150,15 @@ if (mysqli_num_rows($result) > 0) {
       <ul class="navbar-nav ml-auto align-self-center">
 
         <li class="nav-item  ">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="index.php">Home</a>
 
         <li class="nav-item  ">
-          <a class="nav-link" href="profile.html">My Profile
+          <a class="nav-link" href="profile.php">My Profile
 
           </a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="editBio.html">Edit Profile
+          <a class="nav-link" href="editBio.php">Edit Profile
 
           </a>
         <li class="nav-item  ">
@@ -190,6 +190,7 @@ if (mysqli_num_rows($result) > 0) {
               Donec at leo nec felis hendrerit tincidunt sed ac tortor. Praesent eget diam et leo maximus commodo et ac quam. Vestibulum ut eros lectus. Vestibulum sed facilisis ipsum, quis congue nibh. Vestibulum vel porttitor risus, sit amet scelerisque tortor. Donec a arcu pulvinar, consequat tortor sed, imperdiet felis. Pellentesque luctus vitae velit eu semper. In ullamcorper iaculis nisi, ac mollis nulla sollicitudin nec. Nullam aliquam porta arcu vel suscipit. Nam congue ex sed convallis eleifend. Maecenas a odio a augue pellentesque volutpat. Quisque nisi augue, accumsan at pretium ut, ornare vitae enim. Morbi placerat convallis neque ac varius. Phasellus rhoncus est ut sem malesuada porttitor. Donec pretium molestie est eu varius.
 
               Sed commodo lectus ut ipsum tempus ullamcorper. Donec vitae augue eget nibh dignissim mattis ut a massa. Aliquam lacinia tincidunt felis, eu rhoncus tortor tincidunt gravida. Nam lacinia sodales lectus. Aenean magna orci, efficitur eget maximus eu, tincidunt nec nibh. Sed et est eget lacus vehicula efficitur sit amet at ligula. Suspendisse potenti. Aenean vitae molestie risus. Nam id sapien arcu. Fusce malesuada felis vel orci auctor facilisis. Duis non dictum magna. Nulla fringilla eget eros vel vulputate. Nulla facilisi. Nam vel nibh in leo laoreet egestas eget sed leo. Maecenas hendrerit congue urna, ac cursus enim vehicula et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+              <iframe width="560" height="315" style="margin-left:100px ;" src="https://www.youtube.com/embed/vcAIZ4axYZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <br><br>
           <div class="d-flex mt-3">
