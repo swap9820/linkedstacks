@@ -689,7 +689,7 @@ input.input100 {
 
 .profile-bg {
   background-image: linear-gradient(rgb(248, 229, 177),rgb(0, 0, 0));
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   color: white;
   /* background-color: rgba(0, 0, 0, 0.897); */
