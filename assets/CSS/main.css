@@ -1,10 +1,13 @@
 .html{
-  --bgcolor:#222;
+  --bgcolor:#1b262c;
   --primarycolor:#375a7f;
+
 }
 
 .base{
-	background-color: #222;
+	background-image: linear-gradient(rgb(248, 229, 177),rgb(0, 0, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .newPostSection{
 	/*background-color: red;*/
@@ -13,8 +16,8 @@
 	/*background-color: blue;*/
 }
 .footer{
-	background-color: #222;
-	height:200px;
+	background-color: transparent;
+	
 }
 .postsColumn{
 	margin-left: 100px;
@@ -34,22 +37,22 @@ color: white;
 	height: 300px;
 	width: 250px;
 	border-radius: 5px;
-background-color: #1d3747de;
+background-color:#1b262c;
 }
 .leaders{
-	background-color: #192b3e;
+	background-color: #1b262c;
 }
 .newPost{
 	height: 70px;
 	width: 200px;
 	border-radius: 5px;
-background: #192b3e;
+background: #1b262c;
 }
 .clanList{
 	height: 400px;
 	width: 250px;
 	border-radius: 5px;
-background: #1d3747de;
+background: #1b262c;
 }
 .socialMedia{
 	height:2rem;
@@ -63,7 +66,7 @@ background: #1d3747de;
 
 .navbar {
   border-radius: none;
-  background-color: #1d3747de;
+  background-color: #1b262c;
 }
 
 
@@ -679,14 +682,17 @@ input.input100 {
 /* Profile Page */
 .profile-bio {
   border-radius: 0.25rem;
-  background-color: #1d3747de;
+  background-color: #1b262c;
   color: white;
   margin-top: 20%;
 }
 
 .profile-bg {
+  background-image: linear-gradient(rgb(248, 229, 177),rgb(0, 0, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
-  background-color: rgb(32, 37, 39);
+  /* background-color: rgba(0, 0, 0, 0.897); */
 }
 
 .profile-project-list {
@@ -723,7 +729,7 @@ input.input100 {
   color: white;
   vertical-align: middle;
   border-radius: 0.25rem;
-  background-color: #1d3747de;
+  background-color: #1b262c;
 }
 
 .btn-outline-primary {

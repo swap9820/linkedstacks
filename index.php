@@ -22,7 +22,7 @@
         <!-- Main CSS-->
         <link rel="stylesheet" href="assets/CSS/main.css">
 </head>
-<body style="color: white;">
+<body style="color: white; overflow-x:hidden">
 <?php
 require_once("config.php");
 // FETCH POSTS
@@ -37,7 +37,7 @@ if(!mysqli_num_rows($postInfo)>0)
 ?>
 	<div class="base profile-bg" style="font-family: OpenSans-Regular;">
 		<nav class="navbar navbar-expand-lg navbar-dark nav">
-        <a class="navbar-brand " href="index.html">LinkedStacks</a>
+        <a class="navbar-brand " href="index.php">LinkedStacks</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -52,7 +52,7 @@ if(!mysqli_num_rows($postInfo)>0)
           <ul class="navbar-nav ml-auto align-self-center">
             
             <li class="nav-item  ">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.php">Home</a>
             
             <li class="nav-item active ">
                 <a class="nav-link" href="profile.php">My Profile
@@ -60,7 +60,7 @@ if(!mysqli_num_rows($postInfo)>0)
                 </a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="editBio.html">Edit Profile
+                <a class="nav-link" href="editBio.php">Edit Profile
                   
                 </a>
               <li class="nav-item  ">
@@ -80,7 +80,7 @@ if(!mysqli_num_rows($postInfo)>0)
       <?php 
                    while ($row = mysqli_fetch_assoc($postInfo)){
                        echo
-                '<div class="p-3 post">
+                '<div class="p-3 profile-project-list-item">
                     <div class ="row">
                         <div class="col-md-2 align-content-center"> <div style="margin-top:20px">'.$row["Likes"].' Likes</div></div>
                         <div class="col">
@@ -136,7 +136,7 @@ if(!mysqli_num_rows($postInfo)>0)
 		</div>
 	   </div>
 	</div>
-	<div class="footer px-5 py-4">
+	<!-- <div class="footer px-5 py-4">
 		<hr style="background-color: #375a7f;">
 		<div class="mt-4 d-flex flex-row justify-content-between">
 			<div class="socialMedia">
@@ -156,6 +156,6 @@ if(!mysqli_num_rows($postInfo)>0)
 				Made with ❤ in India.
 			</p>
 		</div>
-	</div>
+	</div> -->
 </body>
 </html>

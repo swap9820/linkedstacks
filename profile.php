@@ -42,7 +42,7 @@ require_once("config.php");
     
 
     <nav class="navbar navbar-expand-lg navbar-dark nav">
-        <a class="navbar-brand " href="index.html">LinkedStacks</a>
+        <a class="navbar-brand " href="index.php">LinkedStacks</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -57,7 +57,7 @@ require_once("config.php");
           <ul class="navbar-nav ml-auto align-self-center">
             
             <li class="nav-item  ">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.php">Home</a>
             
             <li class="nav-item active ">
                 <a class="nav-link" href="profile.php">My Profile
@@ -150,8 +150,9 @@ require_once("config.php");
            </div>
        </div>
    </div>
-   <div class="footer px-5 py-4">
-    <hr style="background-color: #375a7f;">
+   <!-- <hr style="background-color: #375a7f;"> -->
+   <!-- <div class="footer px-5 py-4" style="background-color: transparent;">
+   
     <div class="mt-4 d-flex flex-row justify-content-between">
       <div class="socialMedia">
         <a href="https://www.linkedin.com">
@@ -170,7 +171,7 @@ require_once("config.php");
         Made with ❤ in India.
       </p>
     </div>
-  </div>
+  </div> -->
 </body>
 
 </html>
