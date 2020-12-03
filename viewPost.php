@@ -103,6 +103,23 @@
         </style>
     </head>
     <body style="background-color: #222;font-family: OpenSans-Regular;font-size: 19px;">
+    <?php
+    require_once("config.php");
+
+    // FETCH BIO
+        $user=$_SESSION['User ID'];
+        $pid=$_GET['projectId'];
+        $sql="SELECT * from project where `Project ID` = '$pid'";
+    
+        $result=mysqli_query($con,$sql);
+
+        if(mysqli_num_rows($result)>0)
+        {     
+                    $record=mysqli_fetch_array($result);        
+
+        }
+       
+    ?>
       <nav class="navbar navbar-expand-lg navbar-dark nav">
         <a class="navbar-brand " href="index.html">LinkedStacks</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -148,53 +165,65 @@
           <div class="main-container" style="color: white;">
             <div class="class="mt-3 post-display style="font-size: 19px;">
               <div class="box">
-                <label class="signin-heading" style="font-size: 40px; color: white;">Freelancer</label>
-                <div class="postedby-box" >
-                <span class="text-muted"> Posted by </span>
-                </div>
-                <div style="line-height: 1.9em; font-size: 19px;margin-top: 1.8em;">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              </div>
-                <br><br>
-                <div class="d-flex mt-3"><h4 style="color: white;margin-right:1em;">Tags: </h4>
-	              <a class="text-decoration-none">
-                  <button type="button" class="btn btn-dark post-tag-button align-self-center" style="font-size: 0.8em;">Web Development</button>
-                </a>
-              </div>
-              
-                <i onclick="myFunction(this)" class="fa fa-thumbs-up"> Like </i>
-                <script>
-                function myFunction(x) {x.classList.toggle("fa-thumbs-down");}
-                </script>
-                <div>
-		      <div class="Toastify"></div>
-	      </div>
-        
-        <div>
-        <label class="signin-heading text-muted">Comments</label>
-        </div>
-        <form>
-        <div class="ml-md-3">
-          <div class="profile-items">
-            <div class="d-flex">
-              <div class="profile-icon">
-                <img src="images/avatar/boy-1.svg" style="width: 26px; height: 26px; border-radius: 12px; ">
-              </div>
-              <fieldset class="com-box ml-3 flex-grow-1">
-                <input name="commentundefined" class="post-comment" type="text" placeholder="Type your reply here." value="">
-              </fieldset>
+             <?php if(mysqli_num_rows($result)>0)
+        {     
+                    $record=mysqli_fetch_array($result);        
+
+
+                    echo '<label class="signin-heading" style="font-size: 40px; color: white;">'.$record['Project Name'].'</label>
+                    <div class="postedby-box" >
+                    <span class="text-muted"> Posted by '.$record['Project Name'].'</span>
+                    </div>
+                    <div style="line-height: 1.9em; font-size: 19px;margin-top: 1.8em;">
+                    <p>info</p>
+                  </div>
+                    <br><br>
+                    <div class="d-flex mt-3"><h4 style="color: white;margin-right:1em;">Tags: </h4>
+                    <a class="text-decoration-none">
+                      <button type="button" class="btn btn-dark post-tag-button align-self-center" style="font-size: 0.8em;">Web Development</button>
+                    </a>
+                  </div>
+                  
+                    <i onclick="myFunction(this)" class="fa fa-thumbs-up"> Like </i>
+                    <script>
+                    function myFunction(x) {x.classList.toggle("fa-thumbs-down");}
+                    </script>
+                    <div>
+              <div class="Toastify"></div>
             </div>
-            <div class="row">
-              <div class="d-flex ml-auto mt-1 ">
-                <button class="post-comment-btn px-4" action="submit">Post</button>
-                <div class="Toastify"></div>
-                <button class="draft-post-btn ml-3 p-3" action="cancel">Cancel</button>
+            
+            <div>
+            <label class="signin-heading text-muted">Comments</label>
+            </div>
+            <form>
+            <div class="ml-md-3">
+              <div class="profile-items">
+                <div class="d-flex">
+                  <div class="profile-icon">
+                    <img src="images/avatar/boy-1.svg" style="width: 26px; height: 26px; border-radius: 12px; ">
+                  </div>
+                  <fieldset class="com-box ml-3 flex-grow-1">
+                    <input name="commentundefined" class="post-comment" type="text" placeholder="Type your reply here." value="">
+                  </fieldset>
+                </div>
+                <div class="row">
+                  <div class="d-flex ml-auto mt-1 ">
+                    <button class="post-comment-btn px-4" action="submit">Post</button>
+                    <div class="Toastify"></div>
+                    <button class="draft-post-btn ml-3 p-3" action="cancel">Cancel</button>
+                  </div>
               </div>
-          </div>
-        </div>
-        </div>
-        </form>
-          </div>
+            </div>
+            </div>
+            </form>
+              </div>';
+
+
+        }
+        else{
+            echo "project fetch unsucessfull";
+        }?>
+                
         </div>
       </div>
     </div>

@@ -122,7 +122,7 @@ require_once("config.php");
                    <?php 
                    while ($row = mysqli_fetch_assoc($postInfo)){
                        echo
-                '<div class="container profile-project-list-item">
+                '<a href="viewPost.php?projectId='.$row["Project Name"].'" style="display:block;"><div class="container profile-project-list-item">
                     <div class ="row">
                         <div class="col-md-2 align-content-center"> <div style="margin-top:20px">'.$row["Likes"].' Likes</div></div>
                         <div class="col">
@@ -140,7 +140,7 @@ require_once("config.php");
                             </div>
                         </div>
                     </div>
-                </div>';
+                </div></a>';
                 }
                 ?>
                 <button type="button" class="btn btn-outline-primary profile-project-list-item-details" ><a href="index.php">hello</a></button>

@@ -691,6 +691,7 @@ input.input100 {
   background-image: linear-gradient(rgb(248, 229, 177),rgb(0, 0, 0));
   background-size: auto;
   background-repeat: no-repeat;
+  min-height: 100%;
   color: white;
   /* background-color: rgba(0, 0, 0, 0.897); */
 }
