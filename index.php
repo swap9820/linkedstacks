@@ -26,7 +26,7 @@
 <?php
 require_once("config.php");
 // FETCH POSTS
-$sql="SELECT * from project ORDER BY `Timestamp`";
+$sql="SELECT * from project LEFT JOIN credentials ON project.`User ID` = credentials.`User ID` ORDER BY project.`Timestamp`";
 
 $postInfo=mysqli_query($con,$sql);
 if(!mysqli_num_rows($postInfo)>0)
